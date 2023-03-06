@@ -5,6 +5,7 @@ class SuffixTrie {
         this.populateSuffixTrieFrom(string);
     }
     // O(n^2) time | O(n^2) space
+    
     populateSuffixTrieFrom(string) {
         for (let i = 0; i < string.length; i++) {
             this.insertSubStringStartingAt(i, string)
